@@ -12,12 +12,12 @@
             integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
             crossorigin="anonymous">
 
-        <title>SMP NOMOHUDIN | Select</title>
+        <title>SMP NOMOHUDIN | Join</title>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">SELECT</a>
+                <a class="navbar-brand" href="#">SELECT JOIN</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -97,17 +97,19 @@
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>Pelajaran</th>
-                    <th>Nama Pelajaran</th>
+                    <th>Ruangan</th>
+                    <th>Siswa</th>
+                    <th>Kelas</th>
                 </tr>
             </thead>
             <tbody>
                 <?php $no = 1; ?>
-                @foreach ($setup_pelajaran as $sp)
+                @foreach ($tbl_ruangan as $tr)
                 <tr>
                     <td>{{$no++}}</td>
-                    <td>{{$sp->id_pelajaran}}</td>
-                    <td>{{$sp->nama_pelajaran}}</td>
+                    <td>{{$tr->id_ruangan}}</td>
+                    <td>{{$tr->id_siswa}}</td>
+                    <td>{{$tr->id_kelas}}
                 </tr>
                 @endforeach
             </tbody>

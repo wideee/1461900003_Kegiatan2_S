@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-class selectwhereControler extends Controller
+use Illuminate\Support\Facades\DB;
+class joinController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,12 @@ class selectwhereControler extends Controller
      */
     public function index()
     {
-        //
+        $setup_pelajaran = DB::table('tbl_ruangan')
+            ->select('*')
+            ->join('id_ruangan','id_siswa','=','id_kelas')
+            ->get();
+            //dump($setup_pelajaran);
+        return view('0003_join',['tbl_ruangan'=> $tbl_ruangan]);
     }
 
     /**

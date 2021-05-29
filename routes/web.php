@@ -1,5 +1,7 @@
 <?php
 use App\Http\Controllers\siswaController;
+use App\Http\Controllers\whereControler;
+use App\Http\Controllers\joinController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +16,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('0003_sellect');
+    return view('welcome');
+});
+
+Route::get('/select', function () {
+    return view('003_sellect');
+});
+
+Route::get('/where', function () {
+    return view('003_selectwhere');
+});
+
+Route::get('/join', function () {
+    return view('003_join');
 });
 Route::resource('/select', siswaController::class);
+Route::resource('/where', whereControler::class);
+Route::resource('/join', joinController::class);

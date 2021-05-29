@@ -12,12 +12,12 @@
             integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
             crossorigin="anonymous">
 
-        <title>SMP NOMOHUDIN | Select</title>
+        <title>SMP NOMOHUDIN | Select Where</title>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">SELECT</a>
+                <a class="navbar-brand" href="#">SELECT WHERE</a>
                 <button
                     class="navbar-toggler"
                     type="button"
